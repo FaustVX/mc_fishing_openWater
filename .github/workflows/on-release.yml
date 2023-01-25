@@ -1,0 +1,19 @@
+on:
+  release:
+    types: [published]
+
+jobs:
+  add_zip:
+    runs-on: ubuntu-latest
+    name: Add zip file to created release
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+      - name: Install zip
+        run: sudo apt-get install -y zip
+      - name: Create zip file
+        run: zip -r Open_Water.zip data/ pack.mcmeta
+      - name: Upload files to a GitHub release
+        uses: svenstaro/upload-release-action@2.3.0
+        with:
+            file: Open_Water.zip
