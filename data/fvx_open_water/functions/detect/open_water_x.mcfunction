@@ -1,0 +1,2 @@
+data remove storage fvx_open_water:open_water Detect.OpenWater
+execute positioned ~ ~ ~0 if predicate fvx_open_water:is_open_water positioned ~ ~ ~1 if predicate fvx_open_water:is_open_water positioned ~ ~ ~1 if predicate fvx_open_water:is_open_water positioned ~ ~ ~1 if predicate fvx_open_water:is_open_water positioned ~ ~ ~1 if predicate fvx_open_water:is_open_water run data modify storage fvx_open_water:open_water Detect.OpenWater set value true

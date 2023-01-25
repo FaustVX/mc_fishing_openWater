@@ -1,0 +1,28 @@
+{
+  "condition": "minecraft:alternative",
+  "terms": [
+    {
+      "condition": "minecraft:location_check",
+      "predicate": {
+        "block": {
+          "blocks": [
+            "minecraft:air"
+          ]
+        }
+      }
+    },
+    {
+      "condition": "minecraft:location_check",
+      "predicate": {
+        "block": {
+          "tag": "fvx_open_water:is_air"
+        }
+      }
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "fvx_open_water:is_water"
+    }
+  ]
+}
+  
